@@ -319,7 +319,7 @@ class ActiveRecord extends BaseActiveRecord
      * For a large set of models you might consider using [[ActiveQuery::each()]] to keep memory usage within limits.
      *
      * @param array $attributes attribute values (name-value pairs) to be saved into the table
-     * @param string|array $condition the conditions that will be put in the WHERE part of the UPDATE SQL.
+     * @param string|array|null $condition the conditions that will be put in the WHERE part of the UPDATE SQL.
      * Please refer to [[Query::where()]] on how to specify this parameter.
      * @param array $params the parameters (name => value) to be bound to the query.
      * @return int the number of rows updated
